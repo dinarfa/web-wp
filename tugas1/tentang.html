@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <style>
+
+    .about-container {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .team-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+.team-member {
+  background-color: #16163b;
+  padding: 30px 20px;
+  border-radius: 20px;
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+    .team-member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+    }
+
+.team-member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+}
+
+    .team-member h3 {
+      margin: 10px 0 5px;
+      color:#eef4ff ;
+    }
+
+    .team-member p {
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+
+.navbar {
+    /* backgr   ound: linear-gradient(135deg, #6a11cb, #2575fc); */
+    backdrop-filter: blur(10px); /* Efek blur */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient sama dengan body */
+    padding: 15px 20px;
+    /* transition: background 0.3s ease-in-out; */
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-toggler {
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* CARD COURSE */
+
+.nav-tabs .nav-link {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    border: none;
+    padding: 10px 15px; 
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top px-4" id="mainNavbar">
+            <a class="navbar-brand" href="index.html">Evaleon.id</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rekomendasi.php">Rekomendasi</a></li>
+                    <!-- <li class="nav-item"><a class="btn btn-outline-light ms-3" href="login.html">Coba Sekarang</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+  <!-- About Section -->
+  <section class="about-container">
+      <h1 class="text-light fw-bold" style="font-size: 2.5rem;">
+    Kenalin Tim <span style="color: #ffc107;">Evaleon.id</span> 😎
+  </h1>
+  <p class="hero-subtitle text-light mt-3" style="font-size: 1.1rem;">
+    Kita di balik layar sistem <strong>SPK Pemilihan Laptop</strong>—biar kamu gak salah pilih, makin produktif, dan tetap on budget 💻✨
+  </p>
+    <!-- <h1 id="typed-text"></h1><span id="cursor">|</span> -->
+    <!-- <p class="hero-subtitle">Kami adalah tim kecil dengan mimpi besar: membuat teknologi lebih mudah diakses dan menyenangkan.</p> -->
+
+    <div class="team-cards">
+      <div class="team-member">
+        <img src="../gambar/dinaro.jpg" alt="Dinar">
+        <h3>Dinar Fauziah</h3>
+        <p>F52123078</p>
+<blockquote style="font-style: italic; color: #cccccc; margin-top: 10px;">
+"Kesuksesan bukan akhir, kegagalan bukan hal yang fatal. Yang penting adalah keberanian untuk terus melangkah."
+</blockquote>
+      </div>
+      <div class="team-member">
+        <img src="../gambar/cahya.jpg" alt="Beru">
+        <h3>Sitti Cahya Ramadani</h3>
+        <p>F52123070</p>
+        <blockquote style="font-style: italic; color: #bbbbbb; margin-top: 10px;">"Satu-satunya cara untuk menghasilkan pekerjaan hebat adalah dengan mencintai apa yang kamu lakukan."</blockquote>
+      </div>
+      <div class="team-member">
+        <img src="../gambar/safana.jpg" alt="Fahmi">
+        <h3>Safana Annisa Salsabilah</h3>
+        <p>F52123083</p>
+        <blockquote style="font-style: italic; color: #bbbbbb; margin-top: 10px;">"Berusahalah untuk menjadi pribadi yang bernilai, bukan hanya yang sukses."</blockquote>
+      </div>
+
+            <div class="team-member">
+        <img src="../gambar/yese.jpg" alt="Beru">
+        <h3>Yesenia Tracy Nitha Salluk</h3>
+        <p>F52123087</p>
+        <blockquote style="font-style: italic; color: #bbbbbb; margin-top: 10px;">"Jangan hanya melihat jam, lakukan seperti yang dia lakukan — terus bergerak."</blockquote>
+      </div>
+
+            <div class="team-member">
+        <img src="../gambar/nadhia.jpg" alt="Beru">
+        <h3>Nadhia Putri Aprhilia</h3>
+        <p>F52123071</p>
+        <blockquote style="font-style: italic; color: #bbbbbb; margin-top: 10px;">"Kesempatan tidak datang begitu saja. Kamulah yang menciptakannya."</blockquote>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto w-100">
+    <div class="container">
+      <p class="mb-2">© 2025 Evaleon.id. Dibuat dengan ❤️ menggunakan metode WP.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/dinar_fz?igsh=MTdubXM1ZzV0czV3bw==" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("mainNavbar");
+    if (window.scrollY > 10) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>

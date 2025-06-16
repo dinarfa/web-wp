@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | SPK Laptop - Metode WP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-white">
+    <!-- Navbar -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top px-4" id="mainNavbar">
+            <a class="navbar-brand" href="#">Evaleon.id</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fitur">Fitur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rekomendasi">Rekomendasi</a></li>
+                    <!-- <li class="nav-item"><a class="btn btn-outline-light ms-3" href="login.html">Coba Sekarang</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container hero-section text-light text-center text-md-start">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1><span id="typed-text"></span></h1>
+                <p class="hero-subtitle">Pilih laptop terbaik sesuai kebutuhanmu pakai <b>SPK Metode WP</b>. Gak perlu bingung, semua udah kami hitungin!</p>
+                <ul class="list-unstyled">
+                    <li>🎯 Rekomendasi berdasarkan preferensimu</li>
+                    <li>📊 Perhitungan pakai metode Weighted Product</li>
+                    <li>⚡ Gampang & Cepat, cocok banget deh!</li>
+                </ul>
+                <div class="mt-4">
+                    <a href="#rekomendasi" class="btn btn-primary btn-lg px-4">🔍 Cari Laptop Ideal</a>
+                    <a href="#tentang" class="btn btn-outline-light btn-lg ms-3">📽️ Lihat Demo</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="shadow-container">
+                    <img src="../gambar/lp.png" alt="Ilustrasi Laptop" class="floating-image img-fluid" width="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container quote-section">
+        <div class="quote-box">
+            <p id="quote-text"></p>
+            <p class="quote-author" id="quote-author"></p>
+        </div>
+    </div>
+
+    <!-- Fitur Section -->
+    <section id="fitur" class="container my-5">
+        <h5 class="text-center text-uppercase">Fitur Unggulan</h5>
+        <h2 class="text-center fw-bold">Kenapa Pilih Evaleon.id</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-magic fa-3x mb-3 text-primary"></i>
+                <h5>Interface Kekinian</h5>
+                <p>Desain user-friendly. Bikin kamu nyaman pakai terus.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-calculator fa-3x mb-3 text-success"></i>
+                <h5>Metode WP</h5>
+                <p>Pakai metode ilmiah buat hasilkan rekomendasi laptop yang bener-bener cocok.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-rocket fa-3x mb-3 text-danger"></i>
+                <h5>Rekomendasi Cepat</h5>
+                <p>Cuma butuh beberapa klik buat dapetin rekomendasi laptop terbaik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dummy Rekomendasi Section -->
+    <section id="rekomendasi" class="container my-5">
+        <h5 class="text-center text-uppercase">Mulai Sekarang</h5>
+        <h2 class="text-center fw-bold">Rekomendasi Laptop</h2>
+        <p class="text-center">Masukkan preferensimu dan kami bantu hitung pakai metode WP untuk laptop terbaikmu 🔥</p>
+        <div class="text-center mt-4">
+            <a href="rekomendasi.php" class="btn btn-success btn-lg">🔎 Lihat Rekomendasi Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>© 2025 SPK Laptop. Dibuat dengan ❤️ oleh Tim WP Gen Z.</p>
+            <div class="footer-socials mt-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Scripts -->
+    <script>
+        window.addEventListener("scroll", function () {
+            let navbar = document.getElementById("mainNavbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+        var typed = new Typed("#typed-text", {
+            strings: ["🎒 Bingung pilih laptop?", "📌 Pakai SPK Metode WP aja!", "💻 Biar pilih laptop gak pake ribet!"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true,
+            showCursor: false
+        });
+
+        const quotes = [
+            { text: "Keputusan cerdas bikin hidup makin mudah.", author: "SPK Team" },
+            { text: "Teknologi ada buat bantu kamu mikir lebih simpel.", author: "Gen Z Devs" },
+            { text: "Laptop terbaik? Tergantung kamu butuhnya apa.", author: "Sistem WP" },
+        ];
+
+        function getRandomQuote() {
+            const q = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote-text").textContent = `"${q.text}"`;
+            document.getElementById("quote-author").textContent = `- ${q.author}`;
+        }
+
+        getRandomQuote();
+        setInterval(getRandomQuote, 5000);
+    </script>
+</body>
+</html>
